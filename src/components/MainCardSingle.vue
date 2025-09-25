@@ -15,7 +15,8 @@ const username = faker.internet.username({firstName: firstname, lastName: lastna
     <RouterLink :to="{name: 'CardDetails', params: {id: username}}">
         <div class="border border-gray-400 rounded-xl shadow bg-gray-200 h-full">
             <!-- <img :src="faker.image.urlLoremFlickr({category: 'cat'})" /> -->
-            <img class="object-fill h-[480px] w-[960px] rounded-t-xl" v-bind:src="faker.image.urlLoremFlickr({category: 'cats', height: 480, width: 960})" />
+            <!-- <img class="object-fill h-480 w-960 rounded-t-xl" v-bind:src="faker.image.urlLoremFlickr({category: 'dog', height: 480, width: 960})" /> -->
+            <img class="object-fill h-480 w-960" v-bind:src="faker.image.urlLoremFlickr({category: 'cats', height: 480, width: 960})" />
             <div class="p-4" >
                 <p class="mb-2 text-2xl font-bold">{{ fullname }}</p>
                 <p class="mb-3 font-normal text-gray-700">{{job_title}}</p>
